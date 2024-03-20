@@ -1,0 +1,344 @@
+/////////////////////////
+/// HEADER
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    text-transform: uppercase;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+/////////////////////////
+/// NAVIGATION
+.navigation{
+    margin-right: auto;
+    
+
+    &__list{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 2rem;
+
+    }
+
+    &__link{
+        text-decoration: none;
+        color: gray;
+
+        &:last-child{
+            display: flex;
+            align-self: flex-start;
+        }
+
+        &-active{
+            color: #25323a;
+            border-bottom: 1px solid #25323a;
+            padding-bottom: .5rem;
+        }
+
+     
+    }
+    
+}
+
+/////////////////////////
+/// SEARCH
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35rem;
+
+    @media only screen and (max-width: $bp-three){
+        width: 30rem;
+    }
+
+    @media only screen and (max-width: $bp-four){
+        width: 25rem;
+    }
+
+    @media only screen and (max-width: $bp-five){
+        width: 20rem;
+    }
+    
+    &__button {
+        border: none;
+        background: none;
+        position: absolute;
+        z-index: 10;
+        margin-left: .5rem;
+        margin-top: .2rem;
+        cursor: pointer;
+
+        @media only screen and (max-width: $bp-six){
+            left: 18rem;
+            padding: 1rem;
+            background-color: #a8acae;
+            border-radius: 100px;
+        }
+    }
+
+    &__icon{
+        @media only screen and (max-width: $bp-six){
+            height: 1.4rem;
+            width: 1.5rem;
+        }
+        
+    }
+    
+    &__input{
+        padding: 1rem;
+        width: 80%;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-five){
+            width: 70%;
+            margin-left: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-six){
+            margin-left: 0;
+        }
+
+        // @media only screen and (max-width: $bp-four){
+        //     width: 75%;
+        // }
+        
+
+
+        input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border-radius: 100px;
+            border: 1px solid #E9EBEC;
+            transition: all .2s;
+
+            @media only screen and (max-width: $bp-six){
+                display: none;
+            }
+
+            &:hover{
+                border: 1px solid #a8acae;
+            }
+        }
+    }
+
+    &__tool{
+        position: absolute;
+        right: 1.5rem;
+        padding: .5rem;
+        background-color: #1E1E1E;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        transition: all .2s;
+
+        @media only screen and (max-width: $bp-six){
+            display: none;
+        }
+
+        &:hover{
+            background-color: #646464;
+        }
+    }
+
+    &__mood{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        padding: .2rem;
+        border-radius: 100px;
+        background-color: #E3E3E3;
+        cursor: pointer;
+
+        @media only screen and (max-width: $bp-six){
+            display: none;
+        }
+
+
+        &--day{
+            padding: .5rem;
+            background-color: #FFFFFF;
+        }
+    }
+
+    &__notification{
+        padding: .5rem;
+        background-color: #E3E3E3;
+        border-radius: 100px;
+        margin-left: 1rem;
+        cursor: pointer;
+
+        @media only screen and (max-width: $bp-four){
+            display: none;
+        }
+    }
+}
+
+
+/////////////////////////
+/// COMICS
+.comics-view{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comics{
+    &__intro{
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+
+    &__heading{
+        font-size: 4rem;
+        font-weight: 400;
+        margin-bottom: .7rem;
+    }
+
+    &__paragraph{
+        font-size: 1.2rem;
+        color: hsl(200 6% 52% / 1);
+        margin-bottom: 1rem;
+    }
+
+    &__btn:link,
+    &__btn:visited{
+        text-decoration: none;
+        padding: 1rem 2rem;
+        background-color: #1E1E1E;
+        color: #FFFFFF;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all .2s;
+
+        &:hover{
+            background-color: #646464;
+        }
+    }
+}
+
+
+/////////////////////////
+/// GALLARY
+
+.gallary{
+    display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        position: relative;
+        
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 85%;
+        flex-direction: row;
+
+        
+        @media only screen and (max-width: $bp-one){
+            width: 100%;
+            justify-content: space-between;
+            z-index: 90;
+            position: relative;
+        }
+    }
+    
+    &__link{
+
+        width: 3.5rem;
+        height: 3.5rem;
+
+        &--1{
+            @media only screen and (max-width: $bp-one){
+                position: absolute;
+                margin: 0;
+                left: 4rem;
+            }
+        }
+
+        &--2{
+            @media only screen and (max-width: $bp-one){
+                position: absolute;
+                right: 4rem;
+            }
+        }
+    }
+
+    &__left,
+    &__right{
+        transition: all .2s;
+
+        &:hover{
+            background-color: hsla(205, 39%, 89%, 0.437);
+        }
+    }
+
+    &__left{
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-right: 1.5rem;
+        border: 1px solid hsl(200, 18%, 90%);
+        padding: 1rem;
+        border-radius: 50%;
+    }
+
+    &__right{
+        width: 3.5rem;
+        height: 3.5rem;
+        border: 1px solid hsl(200 6% 52% / 1);
+        padding: 1rem;
+        border-radius: 50%;
+    }
+
+    &__photo{
+        width: 12rem;
+        height: 20rem;
+        transition: all .2s;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.5);
+        }
+
+        &--1,
+        &--2{
+            @media only screen and (max-width: $bp-two){
+                display: none;
+            }
+        }
+
+        &--center{
+            width: 14rem;
+            height: 24rem;
+        }
+    }
+
+    &__details{
+
+        &--name,
+        &--author{
+            display: block;
+        }
+
+        &--name{
+            margin-top: .5rem;
+            margin-bottom: .3rem;
+            font-weight: 700;
+        }
+
+        &--author{
+            color: hsl(200 6% 52% / 1);
+        }
+    }
+}

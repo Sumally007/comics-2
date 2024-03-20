@@ -1,0 +1,24 @@
+.container{
+    width: 100vw;
+}
+
+
+.header{
+    width: 100%;
+    height: 15%;
+    background-color: #FFFFFF;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #E9EBEC;
+    position: fixed;
+    z-index: 100;
+}
+
+.contents{
+    width: 100%;
+    height: 100%;
+    padding-top: 9rem;
+    padding-bottom: 4rem;
+    background-image: url(/img/back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,337 @@
+:root {
+  --color-black: 283841;
+  --color-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  font-family: __Inter_aaf875, __Inter_Fallback_aaf875;
+  font-style: normal;
+}
+
+.container {
+  width: 100vw;
+}
+
+.header {
+  width: 100%;
+  height: 15%;
+  background-color: #FFFFFF;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #E9EBEC;
+  position: fixed;
+  z-index: 100;
+}
+
+.contents {
+  width: 100%;
+  height: 100%;
+  padding-top: 9rem;
+  padding-bottom: 4rem;
+  background-image: url(/img/back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  text-transform: uppercase;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.navigation {
+  margin-right: auto;
+}
+.navigation__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+.navigation__link {
+  text-decoration: none;
+  color: gray;
+}
+.navigation__link:last-child {
+  display: flex;
+  align-self: flex-start;
+}
+.navigation__link-active {
+  color: #25323a;
+  border-bottom: 1px solid #25323a;
+  padding-bottom: 0.5rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35rem;
+}
+@media only screen and (max-width: 58.25em) {
+  .search {
+    width: 30rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .search {
+    width: 25rem;
+  }
+}
+@media only screen and (max-width: 48.5em) {
+  .search {
+    width: 20rem;
+  }
+}
+.search__button {
+  border: none;
+  background: none;
+  position: absolute;
+  z-index: 10;
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  cursor: pointer;
+}
+@media only screen and (max-width: 43.3125em) {
+  .search__button {
+    left: 18rem;
+    padding: 1rem;
+    background-color: #a8acae;
+    border-radius: 100px;
+  }
+}
+@media only screen and (max-width: 43.3125em) {
+  .search__icon {
+    height: 1.4rem;
+    width: 1.5rem;
+  }
+}
+.search__input {
+  padding: 1rem;
+  width: 80%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 48.5em) {
+  .search__input {
+    width: 70%;
+    margin-left: 2rem;
+  }
+}
+@media only screen and (max-width: 43.3125em) {
+  .search__input {
+    margin-left: 0;
+  }
+}
+.search__input input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 100px;
+  border: 1px solid #E9EBEC;
+  transition: all 0.2s;
+}
+@media only screen and (max-width: 43.3125em) {
+  .search__input input {
+    display: none;
+  }
+}
+.search__input input:hover {
+  border: 1px solid #a8acae;
+}
+.search__tool {
+  position: absolute;
+  right: 1.5rem;
+  padding: 0.5rem;
+  background-color: #1E1E1E;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+@media only screen and (max-width: 43.3125em) {
+  .search__tool {
+    display: none;
+  }
+}
+.search__tool:hover {
+  background-color: #646464;
+}
+.search__mood {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.2rem;
+  border-radius: 100px;
+  background-color: #E3E3E3;
+  cursor: pointer;
+}
+@media only screen and (max-width: 43.3125em) {
+  .search__mood {
+    display: none;
+  }
+}
+.search__mood--day {
+  padding: 0.5rem;
+  background-color: #FFFFFF;
+}
+.search__notification {
+  padding: 0.5rem;
+  background-color: #E3E3E3;
+  border-radius: 100px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+@media only screen and (max-width: 56.25em) {
+  .search__notification {
+    display: none;
+  }
+}
+
+.comics-view {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comics__intro {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+.comics__heading {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+}
+.comics__paragraph {
+  font-size: 1.2rem;
+  color: hsl(200, 6%, 52%);
+  margin-bottom: 1rem;
+}
+.comics__btn:link, .comics__btn:visited {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+.comics__btn:link:hover, .comics__btn:visited:hover {
+  background-color: #646464;
+}
+
+.gallary {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+}
+.gallary__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 85%;
+  flex-direction: row;
+}
+@media only screen and (max-width: 87.5em) {
+  .gallary__content {
+    width: 100%;
+    justify-content: space-between;
+    z-index: 90;
+    position: relative;
+  }
+}
+.gallary__link {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+@media only screen and (max-width: 87.5em) {
+  .gallary__link--1 {
+    position: absolute;
+    margin: 0;
+    left: 4rem;
+  }
+}
+@media only screen and (max-width: 87.5em) {
+  .gallary__link--2 {
+    position: absolute;
+    right: 4rem;
+  }
+}
+.gallary__left, .gallary__right {
+  transition: all 0.2s;
+}
+.gallary__left:hover, .gallary__right:hover {
+  background-color: hsla(205, 39%, 89%, 0.437);
+}
+.gallary__left {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 1.5rem;
+  border: 1px solid hsl(200, 18%, 90%);
+  padding: 1rem;
+  border-radius: 50%;
+}
+.gallary__right {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid hsl(200, 6%, 52%);
+  padding: 1rem;
+  border-radius: 50%;
+}
+.gallary__photo {
+  width: 12rem;
+  height: 20rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.gallary__photo:hover {
+  transform: scale(1.5);
+}
+@media only screen and (max-width: 62.5em) {
+  .gallary__photo--1, .gallary__photo--2 {
+    display: none;
+  }
+}
+.gallary__photo--center {
+  width: 14rem;
+  height: 24rem;
+}
+.gallary__details--name, .gallary__details--author {
+  display: block;
+}
+.gallary__details--name {
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+.gallary__details--author {
+  color: hsl(200, 6%, 52%);
+}
+
+/*# sourceMappingURL=style.css.map */
