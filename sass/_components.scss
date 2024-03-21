@@ -16,12 +16,19 @@
 .navigation{
     margin-right: auto;
     
+    
 
     &__list{
         display: flex;
         align-items: center;
         list-style: none;
         gap: 2rem;
+
+        @media only screen and (max-width: $bp-six){
+            width: 10rem;
+            justify-content: space-between;
+            display: none;
+        }
 
     }
 
@@ -39,7 +46,6 @@
             border-bottom: 1px solid #25323a;
             padding-bottom: .5rem;
         }
-
      
     }
     
@@ -64,28 +70,34 @@
     @media only screen and (max-width: $bp-five){
         width: 20rem;
     }
+
+    @media only screen and (max-width: $bp-six){
+        position: relative;
+    }
     
     &__button {
         border: none;
         background: none;
         position: absolute;
-        z-index: 10;
         margin-left: .5rem;
         margin-top: .2rem;
         cursor: pointer;
 
         @media only screen and (max-width: $bp-six){
-            left: 18rem;
-            padding: 1rem;
+            padding: .5rem;
             background-color: #a8acae;
-            border-radius: 100px;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            width: 2.25rem;
+            height: 2.25rem;
         }
     }
 
     &__icon{
         @media only screen and (max-width: $bp-six){
-            height: 1.4rem;
-            width: 1.5rem;
+            width: 1.25rem;
+
         }
         
     }
@@ -104,12 +116,9 @@
 
         @media only screen and (max-width: $bp-six){
             margin-left: 0;
+            position: absolute;
+            right: 0;
         }
-
-        // @media only screen and (max-width: $bp-four){
-        //     width: 75%;
-        // }
-        
 
 
         input {
@@ -197,18 +206,52 @@
     &__intro{
         padding-top: 2rem;
         padding-bottom: 4rem;
+        width: 100%;
+
+        @media only screen and (max-width: $bp-four){
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__heading{
-        font-size: 4rem;
+        font-size: 5rem;
         font-weight: 400;
         margin-bottom: .7rem;
+
+        @media only screen and (max-width: $bp-four){
+            width: 30rem;
+        }
+
+        @media only screen and (max-width: $bp-seven){
+            font-size: 3rem;
+            width: 436px;
+            border: 1px solid red;
+        }
+
+        @media only screen and (max-width: $bp-eight){
+            width: 90%;
+        }
     }
 
     &__paragraph{
         font-size: 1.2rem;
         color: hsl(200 6% 52% / 1);
         margin-bottom: 1rem;
+
+        @media only screen and (max-width: $bp-four){
+            width: 30.6rem;
+            line-height: 1.7rem;
+            display: inline-block;
+        }
+
+        @media only screen and (max-width: $bp-seven){
+            border: 1px solid red;
+            padding: 0 1rem;
+            width: 90%;
+        }
     }
 
     &__btn:link,
@@ -220,6 +263,13 @@
         display: inline-block;
         border-radius: 100px;
         transition: all .2s;
+
+        @media only screen and (max-width: $bp-four){
+            display: block;
+            width: 13.84rem;
+            font-size: 1.05rem;
+            font-weight: 400;
+        }
 
         &:hover{
             background-color: #646464;
@@ -265,12 +315,20 @@
                 margin: 0;
                 left: 4rem;
             }
+
+            @media only screen and (max-width: $bp-eight){
+                left: 0;
+            }
         }
 
         &--2{
             @media only screen and (max-width: $bp-one){
                 position: absolute;
                 right: 4rem;
+            }
+
+            @media only screen and (max-width: $bp-eight){
+                right: 0;
             }
         }
     }
@@ -307,6 +365,20 @@
         transition: all .2s;
         cursor: pointer;
 
+        @media only screen and (max-width: $bp-six){
+            width: 10rem;
+            height: 18rem;
+        }
+
+        @media only screen and (max-width: $bp-seven){
+            width: 8rem;
+            height: 14rem;
+        }
+
+        @media only screen and (max-width: $bp-eight){
+            width: 100%;
+        }
+
         &:hover{
             transform: scale(1.5);
         }
@@ -321,6 +393,22 @@
         &--center{
             width: 14rem;
             height: 24rem;
+
+            @media only screen and (max-width: $bp-six){
+                width: 12rem;
+                height: 22rem;
+            }
+
+            @media only screen and (max-width: $bp-seven){
+                width: 10rem;
+                height: 16rem;
+            }
+
+            @media only screen and (max-width: $bp-eight){
+                width: 90%;
+                margin: 0 auto;
+            }
+    
         }
     }
 

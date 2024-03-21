@@ -26,26 +26,19 @@ body {
 
 .container {
   width: 100vw;
+  height: 100vh;
 }
 
 .header {
   width: 100%;
-  height: 15%;
-  background-color: #FFFFFF;
   padding: 1rem 2rem;
   border-bottom: 1px solid #E9EBEC;
-  position: fixed;
-  z-index: 100;
 }
 
 .contents {
   width: 100%;
-  height: 100%;
-  padding-top: 9rem;
-  padding-bottom: 4rem;
-  background-image: url(/img/back.png);
+  background: linear-gradient(180deg, #fff, hsla(0, 0%, 100%, 0.37) 26.21%, #fff), url(/img/back.png), #d3d3d3 50%/cover no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .header {
@@ -67,6 +60,13 @@ body {
   align-items: center;
   list-style: none;
   gap: 2rem;
+}
+@media only screen and (max-width: 43.3125em) {
+  .navigation__list {
+    width: 10rem;
+    justify-content: space-between;
+    display: none;
+  }
 }
 .navigation__link {
   text-decoration: none;
@@ -103,27 +103,33 @@ body {
     width: 20rem;
   }
 }
+@media only screen and (max-width: 43.3125em) {
+  .search {
+    position: relative;
+  }
+}
 .search__button {
   border: none;
   background: none;
   position: absolute;
-  z-index: 10;
   margin-left: 0.5rem;
   margin-top: 0.2rem;
   cursor: pointer;
 }
 @media only screen and (max-width: 43.3125em) {
   .search__button {
-    left: 18rem;
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: #a8acae;
-    border-radius: 100px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    width: 2.25rem;
+    height: 2.25rem;
   }
 }
 @media only screen and (max-width: 43.3125em) {
   .search__icon {
-    height: 1.4rem;
-    width: 1.5rem;
+    width: 1.25rem;
   }
 }
 .search__input {
@@ -142,6 +148,8 @@ body {
 @media only screen and (max-width: 43.3125em) {
   .search__input {
     margin-left: 0;
+    position: absolute;
+    right: 0;
   }
 }
 .search__input input {
@@ -220,16 +228,56 @@ body {
 .comics__intro {
   padding-top: 2rem;
   padding-bottom: 4rem;
+  width: 100%;
+}
+@media only screen and (max-width: 56.25em) {
+  .comics__intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .comics__heading {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 400;
   margin-bottom: 0.7rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .comics__heading {
+    width: 30rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .comics__heading {
+    font-size: 3rem;
+    width: 436px;
+    border: 1px solid red;
+  }
+}
+@media only screen and (max-width: 30.8125em) {
+  .comics__heading {
+    width: 90%;
+  }
 }
 .comics__paragraph {
   font-size: 1.2rem;
   color: hsl(200, 6%, 52%);
   margin-bottom: 1rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .comics__paragraph {
+    width: 30.6rem;
+    line-height: 1.7rem;
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .comics__paragraph {
+    border: 1px solid red;
+    padding: 0 1rem;
+    width: 90%;
+  }
 }
 .comics__btn:link, .comics__btn:visited {
   text-decoration: none;
@@ -239,6 +287,14 @@ body {
   display: inline-block;
   border-radius: 100px;
   transition: all 0.2s;
+}
+@media only screen and (max-width: 56.25em) {
+  .comics__btn:link, .comics__btn:visited {
+    display: block;
+    width: 13.84rem;
+    font-size: 1.05rem;
+    font-weight: 400;
+  }
 }
 .comics__btn:link:hover, .comics__btn:visited:hover {
   background-color: #646464;
@@ -277,10 +333,20 @@ body {
     left: 4rem;
   }
 }
+@media only screen and (max-width: 30.8125em) {
+  .gallary__link--1 {
+    left: 0;
+  }
+}
 @media only screen and (max-width: 87.5em) {
   .gallary__link--2 {
     position: absolute;
     right: 4rem;
+  }
+}
+@media only screen and (max-width: 30.8125em) {
+  .gallary__link--2 {
+    right: 0;
   }
 }
 .gallary__left, .gallary__right {
@@ -310,6 +376,23 @@ body {
   transition: all 0.2s;
   cursor: pointer;
 }
+@media only screen and (max-width: 43.3125em) {
+  .gallary__photo {
+    width: 10rem;
+    height: 18rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .gallary__photo {
+    width: 8rem;
+    height: 14rem;
+  }
+}
+@media only screen and (max-width: 30.8125em) {
+  .gallary__photo {
+    width: 100%;
+  }
+}
 .gallary__photo:hover {
   transform: scale(1.5);
 }
@@ -321,6 +404,24 @@ body {
 .gallary__photo--center {
   width: 14rem;
   height: 24rem;
+}
+@media only screen and (max-width: 43.3125em) {
+  .gallary__photo--center {
+    width: 12rem;
+    height: 22rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .gallary__photo--center {
+    width: 10rem;
+    height: 16rem;
+  }
+}
+@media only screen and (max-width: 30.8125em) {
+  .gallary__photo--center {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .gallary__details--name, .gallary__details--author {
   display: block;
