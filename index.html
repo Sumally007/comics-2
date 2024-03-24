@@ -14,53 +14,55 @@
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <h1 class="logo">comics</h1>
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <a href="#" class="navigation__link navigation__link-active"
-              >Home</a
-            >
-            <a href="#" class="navigation__link navigation__link-margin"
-              >All Comics</a
-            >
-          </ul>
-        </nav>
-        <form action="#" class="search">
-          <div class="search__input">
-            <button class="search__button">
-              <img
-                src="./img/search.png"
-                alt="search pic"
-                class="search__icon"
+      <nav class="box-head">
+        <div class="header">
+          <h1 class="logo">comics</h1>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <a href="#" class="navigation__link navigation__link-active"
+                >Home</a
+              >
+              <a href="#" class="navigation__link navigation__link-margin"
+                >All Comics</a
+              >
+            </ul>
+          </nav>
+          <form action="#" class="search">
+            <div class="search__input">
+              <button class="search__button">
+                <img
+                  src="./img/search.png"
+                  alt="search pic"
+                  class="search__icon"
+                />
+              </button>
+              <input
+                type="text"
+                class=""
+                placeholder="Search comic, author or genre"
               />
-            </button>
-            <input
-              type="text"
-              class=""
-              placeholder="Search comic, author or genre"
-            />
-            <img src="./img/tool.png" alt="tool pic" class="search__tool" />
-          </div>
-          <div class="search__mood">
+              <img src="./img/tool.png" alt="tool pic" class="search__tool" />
+            </div>
+            <div class="search__mood">
+              <img
+                src="./img/day.png"
+                alt=""
+                class="search__mood search__mood--day"
+              />
+              <img
+                src="./img/night.png"
+                alt="night pic"
+                class="search__mood search__mood--night"
+              />
+            </div>
             <img
-              src="./img/day.png"
-              alt=""
-              class="search__mood search__mood--day"
+              src="./img/notification.png"
+              alt="notification pic"
+              class="search__notification"
             />
-            <img
-              src="./img/night.png"
-              alt="night pic"
-              class="search__mood search__mood--night"
-            />
-          </div>
-          <img
-            src="./img/notification.png"
-            alt="notification pic"
-            class="search__notification"
-          />
-        </form>
-      </div>
+          </form>
+        </div>
+      </nav>
 
       <div class="contents">
         <main class="comics-view">
@@ -92,7 +94,7 @@
                 <img
                   src="./img/Mask Group (2).png"
                   alt=""
-                  class="gallary__photo"
+                  class="gallary__photo gallary__photo--3"
                 />
               </div>
               <div class="gallary__box">
@@ -101,22 +103,13 @@
                   alt=""
                   class="gallary__photo gallary__photo--center"
                 />
-
-                <p class="gallary__details">
-                  <span class="gallary__details gallary__details--name"
-                    >Heroes of Olympus</span
-                  >
-                  <span class="gallary__details gallary__details--author"
-                    >James Lavaruno</span
-                  >
-                </p>
               </div>
 
               <div class="gallary__box">
                 <img
                   src="./img/Mask Group (3).png"
                   alt=""
-                  class="gallary__photo"
+                  class="gallary__photo gallary__photo--4"
                 />
               </div>
               <div class="gallary__box">
@@ -132,6 +125,14 @@
                   alt="right arrow"
                   class="gallary__right"
               /></a>
+            </div>
+            <div>
+              <span class="gallary__details gallary__details--name"
+                >Heroes of Olympus</span
+              >
+              <span class="gallary__details gallary__details--author"
+                >James Lavaruno</span
+              >
             </div>
           </div>
         </main>
