@@ -232,7 +232,7 @@ body {
 }
 
 .comics__intro {
-  padding-top: 2rem;
+  padding-top: 10rem;
   padding-bottom: 4rem;
   width: 100%;
 }
@@ -374,28 +374,34 @@ body {
   transition: all 0.2s;
   cursor: pointer;
 }
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 87.5em) {
   .gallary__photo {
-    width: 13rem;
-    height: 21rem;
+    width: 15rem;
+    height: 23rem;
   }
 }
-@media only screen and (max-width: 43.3125em) {
+@media only screen and (max-width: 75em) {
+  .gallary__photo {
+    width: 13.5rem;
+    height: 21.5rem;
+  }
+}
+@media only screen and (max-width: 48.5em) {
   .gallary__photo {
     width: 11.25rem;
     height: 17.188rem;
   }
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 43.3125em) {
   .gallary__photo {
-    width: 9rem;
-    height: 14rem;
+    width: 9.7rem;
+    height: 14.688rem;
   }
 }
-@media only screen and (max-width: 30.8125em) {
+@media only screen and (max-width: 37.5em) {
   .gallary__photo {
     width: 100%;
-    height: 14rem;
+    height: 100%;
   }
 }
 .gallary__photo:hover {
@@ -410,28 +416,34 @@ body {
   width: 14rem;
   height: 24rem;
 }
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 87.5em) {
   .gallary__photo--center {
-    width: 13rem;
-    height: 21rem;
+    width: 16rem;
+    height: 25rem;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .gallary__photo--center {
+    width: 14.5rem;
+    height: 23.5rem;
+  }
+}
+@media only screen and (max-width: 48.5em) {
+  .gallary__photo--center {
+    width: 12.25rem;
+    height: 19.188rem;
   }
 }
 @media only screen and (max-width: 43.3125em) {
   .gallary__photo--center {
-    width: 11.25rem;
-    height: 17.188rem;
+    width: 10.7rem;
+    height: 16.688rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .gallary__photo--center {
-    width: 9rem;
-    height: 14rem;
-  }
-}
-@media only screen and (max-width: 30.8125em) {
-  .gallary__photo--center {
     width: 100%;
-    height: 14rem;
+    height: 100%;
   }
 }
 .gallary__details--name, .gallary__details--author {
