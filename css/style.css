@@ -315,6 +315,11 @@ body {
     font-weight: 400;
   }
 }
+@media only screen and (max-width: 43.3125em) {
+  .comics__btn:link, .comics__btn:visited {
+    padding: 1rem 1rem;
+  }
+}
 .comics__btn:link:hover, .comics__btn:visited:hover {
   background-color: #646464;
 }

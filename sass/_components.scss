@@ -285,6 +285,11 @@
             font-weight: 400;
         }
 
+        @media only screen and (max-width: $bp-six){
+            padding: 1rem 1rem;    
+        }
+
+
         &:hover{
             background-color: #646464;
         }
