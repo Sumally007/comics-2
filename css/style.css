@@ -23,6 +23,7 @@ body {
 }
 
 .container {
+  width: 100vw;
   background-color: #fff;
   display: grid;
   grid-template-rows: repeat(4, min-content);
@@ -32,16 +33,20 @@ body {
   background-color: #fff;
 }
 
-.content-intro {
-  background-color: rgb(139, 201, 118);
-}
-
 .recommended {
-  background-color: rgb(143, 63, 186);
+  color: #000;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  row-gap: 30px;
+  padding: 1.5rem;
 }
 
 .new {
-  background-color: rgb(175, 57, 57);
+  color: #000;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  row-gap: 30px;
+  padding: 1.5rem;
 }
 
 .nav-bar {
@@ -50,6 +55,7 @@ body {
   column-gap: 30px;
   align-items: center;
   padding: 2rem;
+  border-bottom: 1px solid rgb(239, 239, 239);
 }
 .nav-bar .nav {
   display: grid;
@@ -137,6 +143,35 @@ body {
 .nav-bar .user__nav--notification img {
   height: 20px;
   width: 20px;
+}
+
+.new .cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  column-gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+.new .cards .card img {
+  width: 267px;
+  height: 368px;
+}
+
+.recommended .cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  column-gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+.recommended .cards .card {
+  border-radius: 14px;
+}
+.recommended .cards .card img {
+  width: 267px;
+  height: 368px;
 }
 
 /*# sourceMappingURL=style.css.map */
