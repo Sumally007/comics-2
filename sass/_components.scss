@@ -120,16 +120,34 @@
     .cards{
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         column-gap: 30px;
         justify-items: center;
         align-items: center;
+
+        .left{
+            position: absolute;
+            left: 10px;
+            background-color: rgb(182, 176, 176);
+            border-radius: 100px;
+            padding: 20px;
+        }
         .card{
             
             img{
-                width: 15rem;
-                height: 23rem;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 14px;
             }
+        }
+
+        .right{
+            position: absolute;
+            right: 0;
+            background-color: rgb(182, 176, 176);
+            border-radius: 100px;
+            padding: 20px;
         }
     }
 }
@@ -138,17 +156,35 @@
     .cards{
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         column-gap: 30px;
         justify-items: center;
         align-items: center;
+
+        .left{
+            position: absolute;
+            left: 10px;
+            background-color: rgb(182, 176, 176);
+            border-radius: 100px;
+            padding: 20px;
+        }
+
         .card{
-            border-radius: 14px;
 
             img{
-                width: 15rem;
-                height: 23rem;
+                width: 160px;
+                height: 243px;
+                object-fit: cover;
+                border-radius: 14px;
             }
+        }
+
+        .right{
+            position: absolute;
+            right: 0;
+            background-color: rgb(182, 176, 176);
+            border-radius: 100px;
+            padding: 20px;
         }
     }
 }
@@ -186,9 +222,12 @@
             column-gap: 30px;
 
             .card{
+                
                 img{
-                    width: 15rem;
-                    height: 23rem;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 14px;
                 }
             }
         }
