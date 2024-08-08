@@ -187,9 +187,14 @@ body {
   justify-items: center;
   align-items: center;
 }
+@media only screen and (max-width: 1280px) {
+  .new .cards {
+    overflow-x: scroll;
+  }
+}
 @media only screen and (max-width: 1020px) {
   .new .cards {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 @media only screen and (max-width: 768px) {
@@ -207,26 +212,22 @@ body {
 .new .cards .card {
   width: 100%;
 }
-@media only screen and (max-width: 1020px) {
-  .new .cards .card .card__6 {
-    display: none;
-  }
-}
 .new .cards .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 14px;
 }
+@media only screen and (max-width: 1280px) {
+  .new .cards .card img {
+    width: 15rem;
+    height: 23rem;
+  }
+}
 @media only screen and (max-width: 768px) {
   .new .cards .card img {
     width: 16rem;
     height: 24rem;
-  }
-}
-@media only screen and (max-width: 1020px) {
-  .new .cards .card__6 {
-    display: none;
   }
 }
 .new .cards .right {
@@ -238,7 +239,7 @@ body {
 }
 @media only screen and (max-width: 1280px) {
   .new .cards .right {
-    right: -250px;
+    right: 0px;
   }
 }
 @media only screen and (max-width: 1020px) {
@@ -265,9 +266,14 @@ body {
   justify-items: center;
   align-items: center;
 }
+@media only screen and (max-width: 1280px) {
+  .recommended .cards {
+    overflow-x: scroll;
+  }
+}
 @media only screen and (max-width: 1020px) {
   .recommended .cards {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 @media only screen and (max-width: 768px) {
@@ -285,21 +291,17 @@ body {
 .recommended .cards .card {
   width: 100%;
 }
-@media only screen and (max-width: 1020px) {
-  .recommended .cards .card .card__6 {
-    display: none;
-  }
-}
-@media only screen and (max-width: 1020px) {
-  .recommended .cards .card .image__6 {
-    display: none;
-  }
-}
 .recommended .cards .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 14px;
+}
+@media only screen and (max-width: 1280px) {
+  .recommended .cards .card img {
+    width: 15rem;
+    height: 23rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   .recommended .cards .card img {
@@ -316,7 +318,7 @@ body {
 }
 @media only screen and (max-width: 1280px) {
   .recommended .cards .right {
-    right: -250px;
+    right: 0px;
   }
 }
 @media only screen and (max-width: 1020px) {
@@ -346,6 +348,13 @@ body {
   grid-template-columns: repeat(26, max-content);
   column-gap: 20px;
 }
+@media only screen and (max-width: 1280px) {
+  .collection .latters {
+    grid-template-columns: repeat(20, max-content);
+    grid-template-rows: repeat(2, max-content);
+    row-gap: 20px;
+  }
+}
 @media only screen and (max-width: 1020px) {
   .collection .latters {
     grid-template-columns: repeat(15, max-content);
@@ -368,6 +377,15 @@ body {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   column-gap: 30px;
+}
+@media only screen and (max-width: 1280px) {
+  .collection .main__collection .lists__collection {
+    height: 600px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, max-content);
+    row-gap: 30px;
+    overflow-y: scroll;
+  }
 }
 @media only screen and (max-width: 1020px) {
   .collection .main__collection .lists__collection {
