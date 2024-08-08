@@ -129,9 +129,13 @@
             grid-template-columns: repeat(5, 1fr);
         }
 
+        // @media only screen and (max-width: 768px){
+        //     grid-template-rows: max-content;
+        //     grid-template-columns: repeat(3, 1fr);
+        // }
+
         @media only screen and (max-width: 768px){
-            grid-template-rows: max-content;
-            grid-template-columns: repeat(3, 1fr);
+            overflow-x: scroll;
         }
 
         .left{
@@ -155,6 +159,11 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: 14px;
+
+                @media only screen and (max-width: 768px){
+                    width: 16rem;
+                    height: 24rem;
+                }
             }
         }
 
@@ -178,6 +187,10 @@
             @media only screen and (max-width: 1020px){
                 right: 10px;
             }
+
+            @media only screen and (max-width: 768px){
+                right: -219px;
+            }
         }
     }
 }
@@ -197,8 +210,7 @@
         }
 
         @media only screen and (max-width: 768px){
-            grid-template-rows: max-content;
-            grid-template-columns: repeat(3, 1fr);
+            overflow-x: scroll;
         }
 
         .left{
@@ -230,7 +242,10 @@
                 object-fit: cover;
                 border-radius: 14px;
 
-                
+                @media only screen and (max-width: 768px){
+                    width: 16rem;
+                    height: 24rem;
+                }
             }
             
         }
@@ -247,6 +262,10 @@
 
             @media only screen and (max-width: 1020px){
                 right: 10px;
+            }
+
+            @media only screen and (max-width: 768px){
+                right: -219px;
             }
         }
     }
@@ -296,6 +315,14 @@
                 row-gap: 30px;
             }
 
+            @media only screen and (max-width: 768px){
+                height: 600px;
+                grid-template-columns: repeat(2, max-content);
+                grid-template-rows: repeat(4, max-content);
+                column-gap: 30px;
+                overflow-y: scroll;
+            }
+
             .card{
                 width: 100%;
                 img{
@@ -303,6 +330,12 @@
                     height: 100%;
                     object-fit: cover;
                     border-radius: 14px;
+
+                    @media only screen and (max-width: 768px){
+                        width: 16rem;
+                        height: 24rem;
+                    }
+                    
                 }
             }
         }

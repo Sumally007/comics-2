@@ -174,8 +174,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .new .cards {
-    grid-template-rows: max-content;
-    grid-template-columns: repeat(3, 1fr);
+    overflow-x: scroll;
   }
 }
 .new .cards .left {
@@ -199,6 +198,12 @@ body {
   object-fit: cover;
   border-radius: 14px;
 }
+@media only screen and (max-width: 768px) {
+  .new .cards .card img {
+    width: 16rem;
+    height: 24rem;
+  }
+}
 @media only screen and (max-width: 1020px) {
   .new .cards .card__6 {
     display: none;
@@ -221,6 +226,11 @@ body {
     right: 10px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .new .cards .right {
+    right: -219px;
+  }
+}
 
 .recommended .cards {
   width: 100%;
@@ -237,8 +247,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .recommended .cards {
-    grid-template-rows: max-content;
-    grid-template-columns: repeat(3, 1fr);
+    overflow-x: scroll;
   }
 }
 .recommended .cards .left {
@@ -267,6 +276,12 @@ body {
   object-fit: cover;
   border-radius: 14px;
 }
+@media only screen and (max-width: 768px) {
+  .recommended .cards .card img {
+    width: 16rem;
+    height: 24rem;
+  }
+}
 .recommended .cards .right {
   position: absolute;
   right: 0;
@@ -282,6 +297,11 @@ body {
 @media only screen and (max-width: 1020px) {
   .recommended .cards .right {
     right: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .recommended .cards .right {
+    right: -219px;
   }
 }
 
@@ -326,6 +346,15 @@ body {
     row-gap: 30px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .collection .main__collection .lists__collection {
+    height: 600px;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(4, max-content);
+    column-gap: 30px;
+    overflow-y: scroll;
+  }
+}
 .collection .main__collection .lists__collection .card {
   width: 100%;
 }
@@ -334,6 +363,12 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 14px;
+}
+@media only screen and (max-width: 768px) {
+  .collection .main__collection .lists__collection .card img {
+    width: 16rem;
+    height: 24rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
