@@ -40,6 +40,16 @@ body {
   row-gap: 30px;
   padding: 1.5rem;
 }
+@media only screen and (max-width: 768px) {
+  .recommended {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .recommended {
+    padding-right: 0;
+  }
+}
 
 .new {
   color: #000;
@@ -47,6 +57,16 @@ body {
   grid-template-rows: min-content 1fr;
   row-gap: 30px;
   padding: 1.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .new {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .new {
+    padding-right: 0;
+  }
 }
 
 .collection {
@@ -231,6 +251,11 @@ body {
     right: -219px;
   }
 }
+@media only screen and (max-width: 640px) {
+  .new .cards .right {
+    right: -320px;
+  }
+}
 
 .recommended .cards {
   width: 100%;
@@ -302,6 +327,11 @@ body {
 @media only screen and (max-width: 768px) {
   .recommended .cards .right {
     right: -219px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .recommended .cards .right {
+    right: -320px;
   }
 }
 
