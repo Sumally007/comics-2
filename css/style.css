@@ -254,7 +254,7 @@ body {
 }
 @media only screen and (max-width: 640px) {
   .new .cards .right {
-    right: -320px;
+    right: -347px;
   }
 }
 
@@ -333,7 +333,7 @@ body {
 }
 @media only screen and (max-width: 640px) {
   .recommended .cards .right {
-    right: -320px;
+    right: -347px;
   }
 }
 
