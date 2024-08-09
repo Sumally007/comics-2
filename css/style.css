@@ -30,7 +30,7 @@ body {
   display: grid;
   grid-template-rows: repeat(4, min-content);
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   .container {
     padding-top: 200px;
   }
@@ -61,7 +61,7 @@ body {
     padding-right: 0;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   .recommended {
     padding-left: 3.5rem;
   }
@@ -84,7 +84,7 @@ body {
     padding-right: 0;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   .new {
     padding-left: 3.5rem;
   }
@@ -100,18 +100,18 @@ body {
   grid-template-rows: repeat(4, max-content);
   row-gap: 30px;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   .collection {
     margin: 0;
   }
 }
 
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 400px) {
   .mobile__nav {
     display: none;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   .mobile__nav {
     width: 839px;
     display: grid;
@@ -157,7 +157,7 @@ body {
   padding: 2rem;
   border-bottom: 1px solid rgb(239, 239, 239);
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   .nav-bar {
     display: none;
   }
@@ -253,7 +253,7 @@ body {
 .new {
   margin-bottom: 30px;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   .new {
     margin-bottom: 100px;
   }
@@ -282,7 +282,7 @@ body {
     overflow-x: scroll;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   .new .cards {
     column-gap: 117px;
   }
@@ -294,7 +294,7 @@ body {
   border-radius: 100px;
   padding: 20px;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   .new .cards .left {
     height: 88px;
     width: 88px;
@@ -321,7 +321,7 @@ body {
     height: 24rem;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   .new .cards .card img {
     width: 19rem;
     height: 30rem;
@@ -354,9 +354,9 @@ body {
     right: -347px;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   .new .cards .right {
-    right: -381px;
+    right: -420px;
     height: 88px;
     width: 88px;
   }
@@ -385,7 +385,7 @@ body {
     overflow-x: scroll;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   .recommended .cards {
     column-gap: 117px;
   }
@@ -397,7 +397,7 @@ body {
   border-radius: 100px;
   padding: 20px;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   .recommended .cards .left {
     height: 88px;
     width: 88px;
@@ -424,7 +424,7 @@ body {
     height: 24rem;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   .recommended .cards .card img {
     width: 19rem;
     height: 30rem;
@@ -457,9 +457,9 @@ body {
     right: -347px;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   .recommended .cards .right {
-    right: -381px;
+    right: -420px;
     height: 88px;
     width: 88px;
   }
@@ -484,7 +484,7 @@ body {
   font-size: 29px;
   color: hsl(0, 0%, 57%);
 }
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 400px) {
   .collection .input__latter {
     display: none;
   }
@@ -520,7 +520,7 @@ body {
     row-gap: 20px;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   .collection .latters {
     display: none;
   }
@@ -581,7 +581,7 @@ body {
     height: 24rem;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 400px) {
   .collection .main__collection .lists__collection .card img {
     width: 19rem;
     height: 30rem;
