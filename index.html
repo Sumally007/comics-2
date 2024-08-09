@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, intial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -13,6 +15,15 @@
     <title>COMICS</title>
   </head>
   <body>
+    <div class="mobile__nav">
+      <a href="#"
+        ><img src="./img/menu.png" alt="menu btn" class="menu__btn"
+      /></a>
+      <h1 class="logo"><a href="#" class="logo__link">Comics</a></h1>
+      <a href="#" class="search__link"
+        ><img src="./img/search.png" alt="search btn" class="search__btn"
+      /></a>
+    </div>
     <div class="container">
       <div class="nav-bar">
         <nav class="nav">
@@ -104,6 +115,40 @@
       </div>
       <div class="collection">
         <h3 class="heading__3">All Comics Collection</h3>
+        <div class="input__latter">
+          <p>Grouped by Letter</p>
+          <form name="f1" method="post" action="test">
+            <input list="alphabets" />
+            <datalist id="alphabets">
+              <option value="A"></option>
+              <option value="B"></option>
+              <option value="C"></option>
+              <option value="D"></option>
+              <option value="E"></option>
+              <option value="F"></option>
+              <option value="G"></option>
+              <option value="H"></option>
+              <option value="I"></option>
+              <option value="J"></option>
+              <option value="K"></option>
+              <option value="L"></option>
+              <option value="M"></option>
+              <option value="N"></option>
+              <option value="O"></option>
+              <option value="P"></option>
+              <option value="Q"></option>
+              <option value="R"></option>
+              <option value="S"></option>
+              <option value="T"></option>
+              <option value="U"></option>
+              <option value="V"></option>
+              <option value="W"></option>
+              <option value="X"></option>
+              <option value="Y"></option>
+              <option value="Z"></option>
+            </datalist>
+          </form>
+        </div>
         <div class="latters">
           <button class="letter">A</button>
           <button class="letter">B</button>
