@@ -1,8 +1,8 @@
 .mobile__nav{
-    @media only screen and (min-width: 400px){
+    @media only screen and (min-width: 425px){
         display: none;
     }
-    @media only screen and (max-width: 400px){
+    @media only screen and (max-width: 425px){
         width: 839px;
         display: grid;
         grid-template-columns: max-content max-content 1fr;
@@ -57,7 +57,7 @@
     padding: 2rem;
     border-bottom: 1px solid rgb(239 239 239);
 
-    @media only screen and (max-width: 400px){
+    @media only screen and (max-width: 425px){
         display: none;
     }
 
@@ -173,7 +173,7 @@
 .new{
     margin-bottom: 30px;
 
-    @media only screen and (max-width: 400px){
+    @media only screen and (max-width: 425px){
         margin-bottom: 100px;
     }
     
@@ -200,7 +200,7 @@
             overflow-x: scroll;
         }
 
-        @media only screen and (max-width: 400px){
+        @media only screen and (max-width: 425px){
             column-gap: 117px;
         }
 
@@ -211,7 +211,7 @@
             border-radius: 100px;
             padding: 20px;
 
-            @media only screen and (max-width: 400px){
+            @media only screen and (max-width: 425px){
                 height: 88px;
                 width: 88px;
             }
@@ -235,7 +235,7 @@
                     height: 24rem;
                 }
 
-                @media only screen and (max-width: 400px){
+                @media only screen and (max-width: 425px){
                     width: 19rem;
                     height: 30rem;
                 }
@@ -270,7 +270,7 @@
                 right: -347px;
             }
 
-            @media only screen and (max-width: 400px){
+            @media only screen and (max-width: 425px){
                 right: -420px;
                 height: 88px;
                 width: 88px;
@@ -302,7 +302,7 @@
             overflow-x: scroll;
         }
 
-        @media only screen and (max-width: 400px){
+        @media only screen and (max-width: 425px){
             column-gap: 117px;
         }
 
@@ -313,7 +313,7 @@
             border-radius: 100px;
             padding: 20px;
 
-            @media only screen and (max-width: 400px){
+            @media only screen and (max-width: 425px){
                 height: 88px;
                 width: 88px;
             }
@@ -338,7 +338,7 @@
                     height: 24rem;
                 }
 
-                @media only screen and (max-width: 400px){
+                @media only screen and (max-width: 425px){
                     width: 19rem;
                     height: 30rem;
                 }
@@ -369,7 +369,7 @@
                 right: -347px;
             }
 
-            @media only screen and (max-width: 400px){
+            @media only screen and (max-width: 425px){
                 right: -420px;
                 height: 88px;
                 width: 88px;
@@ -400,7 +400,7 @@
             color: hsl(0 0% 57% / 1);
         }
 
-        @media only screen and (min-width: 400px){
+        @media only screen and (min-width: 425px){
             display: none;
         }
 
@@ -436,7 +436,7 @@
             row-gap: 20px;
         }
 
-        @media only screen and (max-width: 400px){
+        @media only screen and (max-width: 425px){
             display: none;
         }
 
@@ -494,7 +494,7 @@
                         width: 16rem;
                         height: 24rem;
                     }
-                    @media only screen and (max-width: 400px){
+                    @media only screen and (max-width: 425px){
                         width: 19rem;
                         height: 30rem;
                     }
