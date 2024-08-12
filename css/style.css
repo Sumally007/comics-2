@@ -493,13 +493,14 @@ body {
 .collection .input__latter form {
   justify-self: end;
 }
-.collection .input__latter form input {
+.collection .input__latter form select {
   width: 137px;
-  padding: 37px;
+  padding: 26px;
   border: none;
   border-radius: 44px;
   background-color: rgb(244, 237, 237);
   outline: none;
+  font-size: 32px;
 }
 .collection .latters {
   justify-self: center;

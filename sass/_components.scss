@@ -407,13 +407,14 @@
         form{
             justify-self: end;
 
-            input{
+            select{
                 width: 137px;
-                padding: 37px;
+                padding: 26px;
                 border: none;
                 border-radius: 44px;
                 background-color: rgb(244 237 237);
                 outline: none;
+                font-size: 32px;
             }
         }
         
